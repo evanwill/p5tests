@@ -1,6 +1,6 @@
 
 function setup() {
-    createCanvas(900,500);
+    createCanvas(900,500).parent('sketch');
     frameRate(10);
     noLoop();
 }
