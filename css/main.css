@@ -1,1 +1,4 @@
 body {padding: 0; margin: 10px;}
+nav h1 { float:left; }
+nav h2 { float:right; }
+canvas { display: block; margin: 0px auto; }

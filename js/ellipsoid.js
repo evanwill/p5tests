@@ -1,9 +1,11 @@
 var rx = 120;
 var ry = 60;
 var rz = 80; 
+var wide;
 
 function setup(){
-  createCanvas(900,500,WEBGL).parent('sketch');
+  wide = windowWidth - 50;
+  createCanvas(wide,500,WEBGL).parent('sketch');
 }
 
 function draw(){
@@ -14,4 +16,7 @@ function draw(){
   rx = rx - random(-10,10);
   ry = ry - random(-10,10);
   rz = rz - random(-10,10);
+}
+function windowResized() {
+  setup();
 }

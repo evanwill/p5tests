@@ -1,18 +1,23 @@
+var wide, high;
 
 function setup() {
-    createCanvas(900,500).parent('sketch');
-    frameRate(10);
-    noLoop();
+  wide = windowWidth - 50;
+  high = 500;
+  createCanvas(wide,high).parent('sketch');
+  frameRate(10);
+  noLoop();
 }
 
 function draw() {
-    fill(random(255),random(255),random(255));
-    triangle(mouseX,mouseY,random(900),random(500),random(900),random(500));
+  fill(random(255),random(255),random(255));
+  triangle(mouseX,mouseY,random(wide),random(high),random(wide),random(high));
 }
 function mousePressed() {
   loop();
 }
-
 function mouseReleased() {
   noLoop();
+}
+function windowResized() {
+  setup();
 }

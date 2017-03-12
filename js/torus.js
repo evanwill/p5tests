@@ -1,8 +1,10 @@
 var rr = 300;
 var tr = 100;
+var wide;
 
 function setup(){
-  createCanvas(900, 500, WEBGL).parent('sketch');
+  wide = windowWidth - 50;
+  createCanvas(wide, 500, WEBGL).parent('sketch');
 }
 
 function draw(){
@@ -12,4 +14,7 @@ function draw(){
   torus(rr, tr);
   rr = rr - 0.5;
   tr = tr - 0.1;
+}
+function windowResized() {
+  setup();
 }

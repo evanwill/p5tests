@@ -1,5 +1,8 @@
+var wide;
+
 function setup(){
-  createCanvas(900, 500, WEBGL).parent('sketch');
+  wide = windowWidth - 50;
+  createCanvas(wide, 500, WEBGL).parent('sketch');
 }
 
 function draw(){
@@ -7,4 +10,7 @@ function draw(){
   rotateX(frameCount * 0.02);
   rotateY(frameCount * 0.01);
   ellipsoid(mouseX, mouseY, 80);
+}
+function windowResized() {
+  setup();
 }
