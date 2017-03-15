@@ -9,7 +9,7 @@ function setup(){
 }
 
 function draw(){
-  background(200);
+  //background(200);
   rotateX(frameCount * 0.01);
   rotateY(frameCount * 0.03);
   ellipsoid(rx, ry, rz);
