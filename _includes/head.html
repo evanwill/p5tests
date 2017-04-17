@@ -1,0 +1,16 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>p5tests - {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta http-equiv="Content-Language" content="en-us" >
+    <meta name="author" content="evanwill" >
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+    <script language="javascript" type="text/javascript" src="js/libraries/p5.min.js"></script>
+    <!--<script language="javascript" src="js/libraries/p5.dom.min.js"></script>-->
+    <!--<script language="javascript" src="js/libraries/p5.sound.min.js"></script>-->
+    <script language="javascript" type="text/javascript" src="{{ site.baseurl }}/js/{{ page.sketch }}"></script>
+</head>

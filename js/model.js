@@ -1,10 +1,9 @@
 var rabbit;
-var wide;
-function setup(){
-  wide = windowWidth - 50;
-  createCanvas(wide, 500, WEBGL).parent('sketch');
-  //createCanvas(900, 500, WEBGL).parent('sketch');
+function preload(){
   rabbit = loadModel('/p5tests/models/rabbit.obj', normalize='true');
+}
+function setup(){
+  createCanvas(windowWidth, windowHeight, WEBGL);
 }
 function draw(){
   background(200);

@@ -1,16 +1,16 @@
 var wide, high;
 
 function setup() {
-  wide = windowWidth - 50;
-  high = 500;
-  createCanvas(wide,high).parent('sketch');
+  wide = windowWidth;
+  high = windowHeight;
+  createCanvas(windowWidth, windowHeight);
   frameRate(10);
   noLoop();
 }
 
 function draw() {
   fill(random(255),random(255),random(255));
-  triangle(mouseX,mouseY,random(wide),random(high),random(wide),random(high));
+  triangle(mouseX,mouseY,random(-150,wide),random(-150,high),random(-150,wide),random(-150,high));
 }
 function mousePressed() {
   loop();

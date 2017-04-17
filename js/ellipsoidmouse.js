@@ -1,12 +1,15 @@
-var wide;
+var img;
 
 function setup(){
-  wide = windowWidth - 50;
-  createCanvas(wide, 500, WEBGL).parent('sketch');
+  img = loadImage('/p5tests/models/lib-header-brand.png');
+  createCanvas(windowWidth, windowHeight, WEBGL);
 }
 
 function draw(){
   background(200);
+  
+  texture(img);
+
   rotateX(frameCount * 0.02);
   rotateY(frameCount * 0.01);
   ellipsoid(mouseX, mouseY, 80);

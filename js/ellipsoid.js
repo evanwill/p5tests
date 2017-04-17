@@ -1,15 +1,18 @@
 var rx = 120;
 var ry = 60;
-var rz = 80; 
-var wide;
+var rz = 80;
+
+var img;
+function preload(){
+  img = loadImage('/p5tests/models/7055599731_80ffac7583_o.jpg');
+}
 
 function setup(){
-  wide = windowWidth - 50;
-  createCanvas(wide,500,WEBGL).parent('sketch');
+  createCanvas(windowWidth, windowHeight, WEBGL);
 }
 
 function draw(){
-  //background(200);
+  texture(img);
   rotateX(frameCount * 0.01);
   rotateY(frameCount * 0.03);
   ellipsoid(rx, ry, rz);
@@ -18,5 +21,6 @@ function draw(){
   rz = rz - random(-10,10);
 }
 function windowResized() {
+  preload();
   setup();
 }

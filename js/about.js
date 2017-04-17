@@ -2,16 +2,16 @@ var wide, high;
 var clicks = 0;
 var inc = 175;
 function setup() {
-    wide = windowWidth - 50;
-    high = 500;
+    wide = windowWidth - windowWidth*.5;
+    high = 100;
     createCanvas(wide,high).parent('sketch');
     if (clicks%2 == 0) {
-        for (var i = 0; i < 100; i++) {
+        for (var i = 0; i < 50; i++) {
             fill(random(255),random(255),random(255));
             ellipse(random(wide), random(high), random(200), random(200));
             };
     } else  {
-        for (var i = 0; i < 100; i++) {
+        for (var i = 0; i < 50; i++) {
             fill(random(255),random(255),random(255));
             var x = random(-20, wide + 50);
             var y = random(-10, high +10);

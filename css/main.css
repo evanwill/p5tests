@@ -1,5 +1,8 @@
 body {padding: 0; margin: 10px;}
-nav h1 { float:left; }
-nav h2 { float:right; }
-a { text-decoration: none; }
+nav h1 { float:left; font-size: 1.6rem;}
+nav h2 { float:right; font-size: 1.4rem;}
+a { text-decoration: none; color: blue; }
 canvas { display: block; margin: 0px auto; }
+#container { display: block; margin: 0px auto; max-width: 80%; }
+footer { display: block; text-align: center; margin: 0px auto; }
+p { text-align: center; }
