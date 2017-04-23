@@ -23,6 +23,6 @@ function setup() {
 function windowResized() {
     setup();
 }
-function mousePressed() {
+function mouseClicked() {
   setup();
 }

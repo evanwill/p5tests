@@ -23,3 +23,7 @@ All tests:
 [torus with image](torus2.html)
 
 [mouse click triangles](triangles.html)
+
+[mobile](mobile.html)
+
+[index image](index2.html)
